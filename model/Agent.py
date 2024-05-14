@@ -42,7 +42,7 @@ class Agent:
         if plugin_name == 'Search':
             return Agent.tool.google_search(plugin_args)
 
-    def text_completion(self, text):
+    def chat(self, text):
         prompt = ChatPromptTemplate(
             messages= [
             Agent.system_prompt,
